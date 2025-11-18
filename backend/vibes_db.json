@@ -1,0 +1,37 @@
+{
+  "foco": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn](https://open.spotify.com/playlist/37i9dQZF1DWWQRwui0ExPn)",
+    "title": "Foco Total",
+    "message": "Modo foco ativado. Bloqueando distrações."
+  },
+  "tristeza": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DWSqBruwoIXkA](https://open.spotify.com/playlist/37i9dQZF1DWSqBruwoIXkA)",
+    "title": "Sad Songs",
+    "message": "Está tudo bem não estar bem. Um abraço sonoro."
+  },
+  "nostalgia": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DX4o1oenSJRJd](https://open.spotify.com/playlist/37i9dQZF1DX4o1oenSJRJd)",
+    "title": "All Out 00s",
+    "message": "Voltando no tempo em 3, 2, 1..."
+  },
+  "energia": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd](https://open.spotify.com/playlist/37i9dQZF1DX0XUsuxWHRQd)",
+    "title": "Energia Máxima",
+    "message": "Bateria recarregada! Aumenta o som."
+  },
+  "relax": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DWZqd5JICZI0u](https://open.spotify.com/playlist/37i9dQZF1DWZqd5JICZI0u)",
+    "title": "Peaceful Piano",
+    "message": "Respire fundo. Relaxe."
+  },
+  "festa": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DXaXB8fQg7xif](https://open.spotify.com/playlist/37i9dQZF1DXaXB8fQg7xif)",
+    "title": "Dance Party",
+    "message": "O fim de semana começa agora!"
+  },
+  "romance": {
+    "url": "[https://open.spotify.com/playlist/37i9dQZF1DX7rOY2tZUw1k](https://open.spotify.com/playlist/37i9dQZF1DX7rOY2tZUw1k)",
+    "title": "Timeless Love",
+    "message": "O amor está no ar."
+  }
+}

@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VibeCheck AI</title>
+    <link href="[https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap](https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap)" rel="stylesheet">
+    <script src="[https://unpkg.com/lucide@latest](https://unpkg.com/lucide@latest)"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="layout">
+        <aside class="sidebar">
+            <div class="brand">
+                <div class="logo"><i data-lucide="music-2"></i></div>
+                <h1>VibeCheck</h1>
+            </div>
+            <div class="sidebar-footer">
+                <div class="status-badge">
+                    <span class="status-dot" id="status-dot"></span>
+                    <span id="status-text">Conectando...</span>
+                </div>
+                <p class="version">v1.0 </p>
+            </div>
+        </aside>
+
+        <main class="chat-container">
+            <header class="chat-header">
+                <div class="header-info">
+                    <h2>Assistente Musical</h2>
+                    <span class="ai-badge">AI verticalizada para musicas</span>
+                </div>
+            </header>
+
+            <div id="messages" class="messages-list">
+                <div class="msg bot">
+                    <div class="avatar"><i data-lucide="bot"></i></div>
+                    <div class="bubble">
+                        Olá. Sou sua inteligência musical verticalizada. 🎧<br>
+                        Descreva seu momento e eu encontro a trilha perfeita.
+                    </div>
+                </div>
+            </div>
+
+            <div class="input-area">
+                <form id="chat-form">
+                    <div class="input-wrapper">
+                        <input type="text" id="input-text" placeholder="Ex: Preciso estudar focado..." autocomplete="off">
+                        <button type="submit" id="send-btn"><i data-lucide="send"></i></button>
+                    </div>
+                </form>
+            </div>
+        </main>
+    </div>
+    <script src="script.js"></script>
+    <script>
+        window.onload = function() {
+            if (typeof lucide !== 'undefined') lucide.createIcons();
+        };
+    </script>
+</body>
+</html>
