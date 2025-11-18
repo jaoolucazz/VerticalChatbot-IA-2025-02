@@ -29,7 +29,7 @@ def load_db():
 
 VIBES_DB = load_db()
 
-def extract_spotify_id(url):
+def extract_spotify_id(url): #pega o spotfy ID da URL
     match = re.search(r'(?:playlist|track|album)[/:]([a-zA-Z0-9]+)', url)
     return match.group(1) if match else None
 
