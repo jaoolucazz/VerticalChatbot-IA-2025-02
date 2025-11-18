@@ -13,7 +13,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 API_KEY = os.getenv("GEMINI_API_KEY")
 if not API_KEY:
-    print("⚠️ AVISO: Chave GEMINI_API_KEY não encontrada no arquivo .env")
+    print("AVISO: Chave GEMINI_API_KEY não encontrada.")
 else:
     genai.configure(api_key=API_KEY)
 
@@ -74,7 +74,7 @@ def recommend():
         
         response = model.generate_content(prompt)
         raw_output = response.text.strip()
-        print(f"🤖 Resposta da IA: {raw_output}")
+        print(f"Resposta da IA: {raw_output}")
 
         if raw_output.startswith("VIBE:"):
             vibe_key = raw_output.replace("VIBE:", "").strip().lower()
