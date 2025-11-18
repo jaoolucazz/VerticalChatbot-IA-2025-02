@@ -58,10 +58,10 @@ function addSpotify(id, title) {
     
     div.innerHTML = `
         <div class="avatar" style="opacity:0"></div>
-        <div class="spotify-embed">
+        <div class="spotify-embed" style="display:flex; justify-content:center;">
             <iframe 
                 src="https://open.spotify.com/embed/playlist/${id}?utm_source=generator&theme=0" 
-                width="100%" height="352" frameBorder="0" 
+                style="width:900px; max-width:100%; height:480px; border:0;" 
                 allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture" 
                 loading="lazy">
             </iframe>
