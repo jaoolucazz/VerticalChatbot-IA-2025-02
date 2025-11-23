@@ -26,7 +26,7 @@ async function checkHealth() {
 setInterval(checkHealth, 5000);
 checkHealth();
 
-//func para auxiliar 
+// funções utilitárias
 function safeRefreshIcons() {
     if (typeof lucide !== 'undefined') lucide.createIcons();
 }
@@ -68,11 +68,10 @@ function addSpotify(id, title) {
         </div>
     `;
     messages.appendChild(div);
-    safeRefreshIcons();
     scrollToBottom();
 }
 
-// Lógica do envio
+// envio de mensagens
 form.addEventListener('submit', async (e) => {
     e.preventDefault();
     const text = input.value.trim();
@@ -105,11 +104,22 @@ form.addEventListener('submit', async (e) => {
 
         if (!res.ok) throw new Error('Erro na API');
         const data = await res.json();
-        
-        if (data.found) {
+
+        // 🔥 SUPORTE A MÚLTIPLAS PLAYLISTS
+        if (data.multiple) {
+            for (const item of data.results) {
+                addMessage(item.message, 'bot');
+
+                if (item.found) {
+                    addSpotify(item.spotify_id, item.title);
+                }
+            }
+        }
+        else if (data.found) {
             addMessage(data.message, 'bot');
             addSpotify(data.spotify_id, data.title);
-        } else {
+        }
+        else {
             addMessage(data.message || "Não entendi.", 'bot');
         }
 
