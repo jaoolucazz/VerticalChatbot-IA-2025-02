@@ -53,22 +53,22 @@ def recommend():
 
         # PROMPT MELHORADO COM SUPORTE A MÚLTIPLAS VIBES
         prompt = f"""
-Você é o **VibeCheck**, um especialista musical inteligente e extremamente preciso.
+            Você é o **VibeCheck**, um especialista musical inteligente e extremamente preciso.
 
-Entrada do usuário: "{text}"
+            Entrada do usuário: "{text}"
 
-Playlists disponíveis: {list(VIBES_DB.keys())}
+            Playlists disponíveis: {list(VIBES_DB.keys())}
 
---- MODO DE RESPOSTA ---
+            --- MODO DE RESPOSTA ---
 
-1) Se o usuário pedir 1 ou mais vibes/gêneros, responda:
-VIBE:vibe1,vibe2,vibe3
+            1) Se o usuário pedir 1 ou mais vibes/gêneros, responda:
+            VIBE:vibe1
 
-2) Se o usuário quiser conversar:
-CHAT:resposta curta
+            2) Se o usuário quiser conversar:
+            CHAT:resposta curta
 
-Nunca envie nada fora disso.
-"""
+            Nunca envie nada fora disso.
+            """
 
         response = model.generate_content(prompt)
         raw_output = response.text.strip()
