@@ -5,6 +5,14 @@
 
 ---
 
+* Bernardo Luiz Silva Edmundo | 12316214
+* João Lucas Torquato de Faria | 12416762
+* Matheus Rocha Nogueira | 124221544
+* Pedro Henrique Esperidião Aureliano | 124221061
+* Rafael Araújo Pace | 12410152
+
+---
+
 ## 📌 Visão Geral
 
 O **VibeCheck AI** é um chatbot musical inteligente que interpreta o estado emocional e o contexto do usuário para recomendar automaticamente playlists do Spotify de forma personalizada.
